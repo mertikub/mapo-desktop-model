@@ -4,7 +4,7 @@ public class PrintJob {
 
 	private String printer;
 	
-	private AgentDTO agentDto;
+	private AgentCardDTO agentDto;
 	
 	public PrintJob() {
 		// TODO Auto-generated constructor stub
@@ -12,7 +12,7 @@ public class PrintJob {
 	
 	
 
-	public PrintJob(String printer, AgentDTO agentDto) {
+	public PrintJob(String printer, AgentCardDTO agentDto) {
 		super();
 		this.printer = printer;
 		this.agentDto = agentDto;
@@ -28,11 +28,11 @@ public class PrintJob {
 		this.printer = printer;
 	}
 
-	public AgentDTO getAgentDto() {
+	public AgentCardDTO getAgentDto() {
 		return agentDto;
 	}
 
-	public void setAgentDto(AgentDTO agentDto) {
+	public void setAgentDto(AgentCardDTO agentDto) {
 		this.agentDto = agentDto;
 	}
 	

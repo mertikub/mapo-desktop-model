@@ -1,6 +1,6 @@
 package ml.icitap.printer.model;
 
-public class AgentDTO {
+public class AgentCardDTO {
 	
 	private String cardId;
 	private String printTime;
@@ -20,7 +20,7 @@ public class AgentDTO {
 	private byte[] photo;
 	private String photoFile;
 	
-	public AgentDTO() {
+	public AgentCardDTO() {
 		// TODO Auto-generated constructor stub
 	}
 
