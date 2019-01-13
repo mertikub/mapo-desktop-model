@@ -6,11 +6,21 @@ public class PrintJob {
 	
 	private AgentCardDTO agentDto;
 	
+	private int jobId;
+	
 	public PrintJob() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	
+
+	public PrintJob(String printer, int jobId) {
+		super();
+		this.printer = printer;
+		this.jobId = jobId;
+	}
+
+
 
 	public PrintJob(String printer, AgentCardDTO agentDto) {
 		super();
@@ -34,6 +44,18 @@ public class PrintJob {
 
 	public void setAgentDto(AgentCardDTO agentDto) {
 		this.agentDto = agentDto;
+	}
+
+
+
+	public int getJobId() {
+		return jobId;
+	}
+
+
+
+	public void setJobId(int jobId) {
+		this.jobId = jobId;
 	}
 	
 	
