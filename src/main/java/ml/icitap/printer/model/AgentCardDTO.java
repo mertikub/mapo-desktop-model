@@ -10,6 +10,8 @@ public class AgentCardDTO {
 	private String fullname;
 	private String fatherName;
 	private String bloodgroup;
+	private String birthDate;
+	private String birthPlace;
 	private String corps;
 	private String grade;
 	private String organization;
@@ -134,6 +136,22 @@ public class AgentCardDTO {
 
 	public void setPrintTime(String printTime) {
 		this.printTime = printTime;
+	}
+
+	public String getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(String birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getBirthPlace() {
+		return birthPlace;
+	}
+
+	public void setBirthPlace(String birthPlace) {
+		this.birthPlace = birthPlace;
 	}
 	
 	
