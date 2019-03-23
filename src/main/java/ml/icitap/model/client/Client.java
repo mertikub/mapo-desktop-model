@@ -1,4 +1,4 @@
-package ml.icitap.client;
+package ml.icitap.model.client;
 
 public class Client {
 

@@ -1,43 +1,39 @@
-package ml.icitap.printer.model;
+package ml.icitap.model.printing;
 
 public class PrintingStatusInfo {
 	
-	int statusCode;
+	public static final int PRINT_SUCCESS = 0;
+	public static final int ERROR_NO_PRINTER_FOUND = 1;
+	public static final int ERROR_OTHER = 2;
+	public static final int ERROR_NO_TEMPLATE = 3;
+	public static final int PRINT_CANCELED = 4;
+	public static final int ERROR_ENCODING = 5; 
 	
-	int jobId;
+	private int statusCode;
 	
-	String errorInfo;
+	private int jobId;
 	
-	public PrintingStatusInfo() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public PrintingStatusInfo(int jobId) {
-		super();
-		this.jobId = jobId;
-		this.statusCode = 200;
-	}
+	private String errorInfo;
+	
+	public PrintingStatusInfo() {	}
 
 	public PrintingStatusInfo(int statusCode, String errorInfo) {
 		super();
 		this.statusCode = statusCode;
 		this.errorInfo = errorInfo;
+		this.jobId = -1;
 	}
 	
-	public boolean noTemplateFile() {
-		return 401==statusCode;
+	public PrintingStatusInfo(int statusCode, String errorInfo, int jobId) {
+		super();
+		this.statusCode = statusCode;
+		this.errorInfo = errorInfo;
+		this.jobId = jobId;
 	}
 	
-	public boolean noPrinter() {
-		return 404==statusCode;
-	}
-	
-	public boolean anyError() {
-		return 500==statusCode;
-	}
-	
-	public boolean noError() {
-		return 200==statusCode;
+	@Override
+	public String toString() {
+		return String.format("Job: %d, Code: %d, Info: %s", jobId, statusCode, errorInfo);
 	}
 
 	public int getStatusCode() {
@@ -63,9 +59,5 @@ public class PrintingStatusInfo {
 	public void setErrorInfo(String errorInfo) {
 		this.errorInfo = errorInfo;
 	}
-	
-	
-	
-	
 
 }

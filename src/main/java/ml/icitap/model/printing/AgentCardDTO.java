@@ -1,4 +1,4 @@
-package ml.icitap.printer.model;
+package ml.icitap.model.printing;
 
 public class AgentCardDTO {
 	
@@ -21,6 +21,8 @@ public class AgentCardDTO {
 	
 	private byte[] photo;
 	private String photoFile;
+	
+	private String template400;
 	
 	public AgentCardDTO() {
 		// TODO Auto-generated constructor stub
@@ -110,7 +112,7 @@ public class AgentCardDTO {
 		return photo;
 	}
 
-	public void setPhoto(byte[] photo) {
+	public void setPhoto(byte[] photo) {		
 		this.photo = photo;
 	}
 
@@ -152,6 +154,14 @@ public class AgentCardDTO {
 
 	public void setBirthPlace(String birthPlace) {
 		this.birthPlace = birthPlace;
+	}
+
+	public String getTemplate400() {
+		return template400;
+	}
+
+	public void setTemplate400(String template400) {
+		this.template400 = template400;
 	}
 	
 	

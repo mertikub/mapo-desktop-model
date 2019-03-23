@@ -1,4 +1,4 @@
-package ml.icitap.printer.model;
+package ml.icitap.model.printing;
 
 public class PrintJob {
 

@@ -1,4 +1,4 @@
-package ml.icitap.fingerprint.model;
+package ml.icitap.model.fingerprint;
 
 public class FingerprintModel {
 
