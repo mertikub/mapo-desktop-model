@@ -58,9 +58,5 @@ public class FingerprintModel {
 	public void setImageQuality(int imageQuality) {
 		this.imageQuality = imageQuality;
 	}
-
-
-	
-	
 	
 }
