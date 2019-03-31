@@ -2,6 +2,7 @@ package ml.icitap.model.printing;
 
 public class AgentCardDTO {
 	
+	private boolean idCard;
 	private String cardId;
 	private String printTime;
 
@@ -15,6 +16,7 @@ public class AgentCardDTO {
 	private String corps;
 	private String grade;
 	private String organization;
+	private String duplicate;
 	
 	private String officerId;
 	private String matricule;
@@ -163,6 +165,21 @@ public class AgentCardDTO {
 	public void setTemplate400(String template400) {
 		this.template400 = template400;
 	}
-	
+
+	public String getDuplicate() {
+		return duplicate;
+	}
+
+	public void setDuplicate(String duplicate) {
+		this.duplicate = duplicate;
+	}
+
+	public boolean isIdCard() {
+		return idCard;
+	}
+
+	public void setIdCard(boolean idCard) {
+		this.idCard = idCard;
+	}
 	
 }
