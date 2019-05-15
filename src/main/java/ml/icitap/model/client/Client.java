@@ -9,6 +9,10 @@ public class Client {
 	public Client() {
 
 	}
+	
+	public Client(String uri) {
+		this.uri = uri;
+	}
 
 	public String getWebClientId() {
 		return webClientId;
