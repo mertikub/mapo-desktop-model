@@ -24,6 +24,8 @@ public class AgentCardDTO {
 	private byte[] photo;
 	private String photoFile;
 	
+	private byte[] signature;
+	
 	private String template400;
 	
 	public AgentCardDTO() {
@@ -180,6 +182,14 @@ public class AgentCardDTO {
 
 	public void setIdCard(boolean idCard) {
 		this.idCard = idCard;
+	}
+
+	public byte[] getSignature() {
+		return signature;
+	}
+
+	public void setSignature(byte[] signature) {
+		this.signature = signature;
 	}
 	
 }
